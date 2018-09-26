@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- ********owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+  <!-- ***********slick******* -->
+   <!--  <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css"> -->
+  
+   <!-- round slider -->
+   <link rel="stylesheet" href="css/roundslider.min.css">
+
+    <!-- *********twenty twenty************* -->
+    <link rel="stylesheet" href="css/twentytwenty.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>jquery plugin 2</title>
+  </head>
+  <body>
+    <!-- ********particle js********** -->
+    <div id="particles-js"></div>
+
+    <!-- *******owl carousel********** -->
+    <section class="owlc">
+      <div class="container">
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+          </div>
+
+          <div class="owl-p owl-theme">
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+            <div> <img src="images/new.jpg" alt=""></div>
+          </div>
+           
+
+           <div class="owl-n owl-theme">
+              <div class="item" data-merge="1"><img src="images/new.jpg" alt=""></div>
+              <div class="item" data-merge="1"><img src="images/new.jpg" alt=""></div>
+              <div class="item" data-merge="3"><img src="images/new.jpg" alt=""></div>
+              <div class="item" data-merge="2"><img src="images/new.jpg" alt=""></div>
+              <div class="item" data-merge="2"><img src="images/new.jpg" alt=""></div>
+              <div class="item" data-merge="1"><img src="images/new.jpg" alt=""></div>
+              <div class="item" data-merge="3"><img src="images/new.jpg" alt=""></div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *************slick************* -->
+    <!-- <section class="slik">
+      <div class="container">
+        <div class="row">
+          <div class="center">
+              <div><img src="images/new.jpg" alt=""></div>
+              <div><img src="images/new.jpg" alt=""></div>
+              <div><img src="images/new.jpg" alt=""></div>
+              <div><img src="images/new.jpg" alt=""></div>
+              <div><img src="images/new.jpg" alt=""></div>
+              <div><img src="images/new.jpg" alt=""></div>
+            </div>
+        </div>
+      </div>
+    </section> -->
+
+   <!-- ********round slider***** -->
+     <section class="rs">
+      <div class="container">
+        <div class="row">
+          <h1>Round slider</h1>
+         <div id="slider"></div>
+       </div>
+      </div>
+    </section>
+
+   <!-- ***************twenty twenty********* -->
+     <section class="twen">
+      <div class="container">
+        <div class="row">
+          <h1>twenty twenty</h1>
+         <div id="container1">
+             <!-- The before image is first -->
+             <img src="images/new.jpg" />
+             <!-- The after image is last -->
+             <img src="images/new2.jpg" />
+            </div>
+       </div>
+      </div>
+    </section>
+
+   
+    <!-- jQuery  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- *********particle js******** -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+  
+    <!-- *********owl carousel******** -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- ***********slick*********** -->
+   <!--  <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script> -->
+
+    <!-- ********round slider -->
+    <script src="js/roundslider.min.js"></script>
+     
+    <!-- *********twenty twenty********** -->
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+<!-- ***********particle js***** -->
+      <script>
+            particlesJS.load('particles-js', 'js/particles.json', function() {
+              console.log('callback - particles-js config loaded');
+            });
+      </script>
+
+<!-- *********owl carousel************ -->
+       <script>
+         $(document).ready(function(){
+            $('.owl-carousel').owlCarousel();
+          });
+       </script>
+
+       <script>
+             $('.owl-p').owlCarousel({
+              items:4,
+              loop:false,
+              center:true,
+              margin:10,
+              URLhashListener:true,
+              autoplayHoverPause:true,
+              startPosition: 'URLHash'
+          });
+       </script>
+
+       <script>
+          $('.owl-n').owlCarousel({
+              items:5,
+              loop:true,
+              margin:10,
+              merge:true,
+              responsive:{
+                  678:{
+                      mergeFit:true
+                  },
+                  1000:{
+                      mergeFit:false
+                  }
+              }
+          });
+       </script>
+
+ <!-- **************slick********** -->
+ <!-- <script>
+   
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+    
+ </script> -->
+
+ <!-- ************round slider************** -->
+     <script>
+          $("#slider").roundSlider();
+     </script>
+
+ <!-- *********twenty twenty******** -->
+    <script>
+$(function(){
+  $("#container1").twentytwenty();
+});
+
+   
+    </script>
+  </body>
+</html>
